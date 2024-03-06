@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --greyish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures the container fills the entire viewport */
+}
+
+.content {
+    width: 50%; /* Adjust this value as needed */
+    max-width: 250px; /* Set maximum width */
+    padding: 12px; /* Add padding as needed */
+    background-color: var(--white); /* Background color for the centered div */
+    border-radius: 10px; /* Add border-radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+.content img {
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 7px;
+}
+
+.content-info {
+    text-align: center;
+    
+    font-family: "Outfit", sans-serif;
+    padding: 5px;
+}
+
+.main {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 13px;
+    padding-top: 12px;
+    padding-bottom: 12px;;
+    color: var(--greyish-blue);
+}
+
+@media only screen and (max-width: 850px) {
+    .content {
+        width: 100%; /* Adjust this value as needed */
+        max-width: 300px; /* Set maximum width */
+    }
+
+    .main {
+        font-size: 22px;
+    }
+    
+    .description {
+        font-size: 15px;
+    }
+}
