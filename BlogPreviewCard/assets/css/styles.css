@@ -1,0 +1,70 @@
+:root {
+    /* color */
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+
+    /* font */
+    --font: "Figtree", sans-serif;
+    --font-size: 16px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow); /* Background color for the whole screen */
+}
+
+.container {
+    width: 80%; 
+    max-width: 380px; 
+    background-color: var(--white); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 0px 0px var(--black); 
+
+    font-family: var(--font);
+}
+
+img.preview {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.tag {
+    font-weight: 800;
+    background: var(--yellow);
+    width: fit-content;
+    padding: 5px;
+}
+
+.title {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.description {
+    color: var(--grey);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.avatar {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.author-name {
+    font-weight: bold;
+}
