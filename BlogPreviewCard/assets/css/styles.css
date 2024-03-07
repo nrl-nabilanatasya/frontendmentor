@@ -44,8 +44,12 @@ img.preview {
 }
 
 .title {
-    color: var(--yellow);
+    color: var(--black);
     cursor: pointer;
+}
+
+.title:hover {
+    color: var(--yellow);
 }
 
 .description {
